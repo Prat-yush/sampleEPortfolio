@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amritha Christy | Resume</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #2b2b2b;
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: rgba(34, 34, 34, 0.95);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .logo-icon {
+      background-color: #d4a373;
+      color: #fff;
+      padding: 0.5rem 0.7rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 300;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #d4a373;
+    }
+
+    /* Resume container */
+    .resume-container {
+      max-width: 900px;
+      width: 90%;
+      margin: 3rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      background-color: #fff;
+    }
+
+    .download-btn {
+      margin-top: 1.5rem;
+      background-color: transparent;
+      color: #d4a373;
+      border: 1px solid #d4a373;
+      padding: 0.7rem 1.5rem;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .download-btn:hover {
+      background-color: #d4a373;
+      color: #2b2b2b;
+    }
+
+    @media (max-width: 600px) {
+      iframe {
+        height: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo" aria-label="Back to Home">
+      <span class="logo-icon">AC</span>
+      <span class="logo-text">Amritha Christy</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="social.html">Social Media</a></li>
+    </ul>
+  </nav>
+
+  <section class="resume-container" aria-label="Resume Document">
+    <iframe src="resume.pdf" title="Resume PDF"></iframe>
+    <a href="resume.pdf" download class="download-btn" aria-label="Download Resume PDF">Download Resume (PDF)</a>
+  </section>
+
+</body>
+</html>

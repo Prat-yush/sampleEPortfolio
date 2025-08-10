@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amritha Christy | Social Media</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #2b2b2b;
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .navbar {
+      background-color: rgba(34, 34, 34, 0.95);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .logo-icon {
+      background-color: #d4a373;
+      color: #fff;
+      padding: 0.5rem 0.7rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 300;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #d4a373;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.7rem;
+      margin-bottom: 3rem;
+      color: #fff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 12px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 0.9rem 2rem;
+      margin-top: 1rem;
+      background-color: #d4a373;
+      color: #1e1e1e;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .card a:hover {
+      background-color: #e9b888;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .card {
+        padding: 2rem 1.5rem;
+      }
+
+      .card a {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo" aria-label="Back to Home">
+      <span class="logo-icon">AC</span>
+      <span class="logo-text">Amritha Christy</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="accomplishments.html">Accomplishments</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="social.html">Social Media</a></li>
+    </ul>
+  </nav>
+
+  <!-- Social Section -->
+  <div class="container">
+    <h1>Connect with me!!</h1>
+    <div class="grid">
+      <!-- LinkedIn -->
+      <div class="card">
+        <a href="https://www.linkedin.com/in/amritha-christy-27b180275/" target="_blank">LinkedIn</a>
+      </div>
+
+      <!-- Handshake -->
+      <div class="card">
+        <a href="https://app.joinhandshake.com/profiles/s64r99" target="_blank">Handshake</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

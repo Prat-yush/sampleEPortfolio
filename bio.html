@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amritha Christy | Bio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: #2b2b2b;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: rgba(34, 34, 34, 0.95);
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .logo-icon {
+      background-color: #d4a373;
+      color: #fff;
+      font-weight: bold;
+      padding: 0.5rem 0.7rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      user-select: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 300;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #d4a373;
+    }
+
+    /* Bio Section */
+    .bio-section {
+      padding: 3rem 1.5rem;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .bio-image {
+      width: 180px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      margin: 0 auto 2rem;
+      display: block;
+    }
+
+    .bio-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      color: #f5f5f5;
+    }
+
+    .bio-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      font-weight: 300;
+      color: #eaeaea;
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    @media (max-width: 600px) {
+      .bio-heading {
+        font-size: 1.3rem;
+      }
+
+      .bio-text {
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .bio-section {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo" aria-label="Back to Home">
+      <span class="logo-icon">AC</span>
+      <span class="logo-text">Amritha Christy</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="social.html">Social Media</a></li>
+    </ul>
+  </nav>
+
+  <!-- Bio Section -->
+  <section class="bio-section">
+    <img src="fashion-hero.jpg" alt="Amritha Christy" class="bio-image" />
+    <h2 class="bio-heading">Hi, my name is Amritha Christy</h2>
+    <p class="bio-text">
+      I’m a merchandising and licensing professional with a master’s degree in Fashion Merchandising and Retail Management from LIM College, New York, and an undergraduate degree in Leather Design from the National Institute of Fashion Technology, Chennai. My career began in design, where I spent over a year creating leather products for global brands at a leading export house, before discovering my passion for brand licensing, a field where creativity and business strategy meet.
+    </p>
+    <p class="bio-text">
+      As a Licensing International Scholarship winner, I was introduced to licensing by Professor Patty and mentored by Bill Gaden, VP of Rodgers & Hammerstein. With my combined background in design, brand strategy, and rights management, I’m driven to help brands tell their stories and expand their reach through impactful licensing partnerships.
+    </p>
+  </section>
+
+  <script>
+    console.log("Bio page loaded.");
+  </script>
+
+</body>
+</html>

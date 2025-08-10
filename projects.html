@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amritha Christy | Projects</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #2b2b2b;
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: rgba(34, 34, 34, 0.95);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .logo-icon {
+      background-color: #d4a373;
+      color: #fff;
+      padding: 0.5rem 0.7rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 300;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #d4a373;
+    }
+
+    /* Project Section */
+    .projects {
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .projects h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      letter-spacing: 1px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .project-card {
+      background-color: #1e1e1e;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-small-heading {
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: #aaa;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .project-subtitle {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-button {
+      margin-top: auto;
+      background-color: transparent;
+      color: #d4a373;
+      border: 1px solid #d4a373;
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .project-button:hover {
+      background-color: #d4a373;
+      color: #1e1e1e;
+    }
+
+    @media (max-width: 768px) {
+      .projects h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo" aria-label="Back to Home">
+      <span class="logo-icon">AC</span>
+      <span class="logo-text">Amritha Christy</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="social.html">Social Media</a></li>
+    </ul>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <h1>PROJECTS</h1>
+    <div class="grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div>
+          <div class="project-small-heading">Licensing project</div>
+          <div class="project-title">POP-Tarts x Beauty</div>
+          <div class="project-subtitle">Brand collaboration proposal</div>
+        </div>
+        <a class="project-button" href="https://www.canva.com/design/DAGvo7wjnRs/VvrjeBf6PftZcMCFGGdUFQ/view?utm_content=DAGvo7wjnRs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6f8af053a0" target="_blank">A sensory brand experience</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div>
+          <div class="project-small-heading">Trend research</div>
+          <div class="project-title">Papyrus</div>
+          <div class="project-subtitle">Identifying emerging opportunities</div>
+        </div>
+        <a class="project-button" href="https://www.canva.com/design/DAGvo1wUuoo/TFBIi27wv7C3l-IeTBYOFA/view?utm_content=DAGvo1wUuoo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h17c9abb3f8" target="_blank">Design capsules</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div>
+          <div class="project-small-heading">Buying plan</div>
+          <div class="project-title">After light</div>
+          <div class="project-subtitle">Eveningwear assortment</div>
+        </div>
+        <a class="project-button" href="https://www.canva.com/design/DAGlZ90bKrA/fA2eAHeTLxXix66RQO9aXQ/view?utm_content=DAGlZ90bKrA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h85dc01232a" target="_blank">Spring 2026</a>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
